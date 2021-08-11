@@ -34,7 +34,7 @@ def gradient_fn(Weight, X, Y):
   temp=0
 
  
-  distance=1-(Y*np.dot(Weight,np.transpose(X))) #this might fix our problem since the dist calc is no longer in forloop
+  distance=1-(Y*np.dot(Weight,np.transpose(X))) 
   #print('dist:',distance.shape)
   for i in distance:
 
@@ -42,9 +42,9 @@ def gradient_fn(Weight, X, Y):
       temp=Weight
      # print("0 greater")
     else:
-      temp=Weight-Cyixi(alpha,X,Y) #we need to fix this it's weird
+      temp=Weight-Cyixi(alpha,X,Y) 
       
-    deltaw.append(temp)  #something here is wrong in the next few lines i think
+    deltaw.append(temp)  
 
   deltaw=np.array(deltaw) 
   deltaw=sum(deltaw)
@@ -85,7 +85,7 @@ def sgd(features, outputs,Xtest,ytest,Xtrain):
     temp_x=np.dot(new_weights,np.transpose(numpy_xtest[i]))
     #print(temp_x)
     testing_model=np.sign(temp_x) 
-      #for testing we need to find the sign-loook up why i forgot 
+      
     prediction=np.append(prediction,testing_model)
 
   print("Weights: ",new_weights)

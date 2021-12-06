@@ -26,6 +26,8 @@ Let’s add a new data file following these steps:
 
 5.	Once feature selection is added to the dataset, we can divide the data into training and testing datasets using the train_test_split() function before using it in a machine learning algorithm.
 6.	After the data is split, we can add the ability to choose a machine learning algorithm. This is another easy if/else if statement to enable this functionality.
+
+
   ![image](https://user-images.githubusercontent.com/44102740/144881585-23dff597-cca4-42da-8bc3-62b75f22a06f.png)
 
 

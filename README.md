@@ -9,13 +9,19 @@ The MaMC App connects to data sets via the pandas python library in the Datasets
 Let’s add a new data file following these steps:
 1.	Upload the csv or arff file into the main MaMC folder
 2.	Define a new function in the Dataset.py file following the code samples using csv and arff files. Note the DS, FS, and ML variables being passed, these allow the application to keep track of and communicate which dataset, feature selection, and machine learning algorithm is chosen.
+
+
  ![image](https://user-images.githubusercontent.com/44102740/144881407-23ca2909-26c4-48ef-aabe-9c85653c6be0.png)
 ![image](https://user-images.githubusercontent.com/44102740/144881440-6cbd426a-4e16-4bf7-8e03-1a0eb7ff6a97.png)
 
 3.	Continue to clean the dataset using the pandas library to convert categorical data (categories such as colors, visual features, or names) into numerical data so that the machine learning algorithms can easily read the data. Fill in any empty data values with the fillna() function. 
+
+
 ![image](https://user-images.githubusercontent.com/44102740/144881507-7f61aed5-aa93-4f0c-9584-62819d05eed3.png)
 
 4.	Next, we will need to add the feature selection capability into the current function. To do this, we need a simple if/else if statement to allow the ability of feature selection to run on the new data. 
+
+
 ![image](https://user-images.githubusercontent.com/44102740/144881553-359d2909-1108-4fe9-bfc5-23f29606518e.png)
 
 5.	Once feature selection is added to the dataset, we can divide the data into training and testing datasets using the train_test_split() function before using it in a machine learning algorithm.
